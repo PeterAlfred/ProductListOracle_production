@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+ <html>
+ 	<head>
+   		<title>Product List Oracle</title>
+   		<script type = "text/javascript" charset = "utf-8" src = "cordova.js"></script>
+   		<!--<link href = "css/custom-theme/custom-theme-d.css" rel = "stylesheet" type = "text/css"/>-->
+   		<link href = "jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" rel = "stylesheet" type = "text/css"/>
+   		<script src = "jquery-1.10.1/jquery-1.10.1.min.js" type = "text/javascript"></script>
+   		<script src = "jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js" type = "text/javascript"></script>
+   		<script type="text/javascript">
+   			function onBodyLoad() {
+				document.addEventListener("deviceready", PhonegapLoaded, false);
+			}
+			function PhonegapLoaded() {
+				navigator.splashscreen.hide();
+				/*alert("Oracle and Java are registered trademarks of Oracle and/or its affiliates. 
+						This app and the author is not affiliated with or endorsed by Oracle Corporation. 
+						Using this app means you agree with the terms and conditions.");*/
+			}
+		</script>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	</head>
+   	<body onload = "onBodyLoad()">
+   		<!-- page 1 -->
+   		<div data-role = "page" id = "home">
+   			<div data-role = "header" data-position = "fixed" data-theme = "a">
+   				<h1>Product List Oracle</h1>
+   			</div>
+   			<div data-role = "content">
+   				<h2>Choose a Product</h2>
+   				<ul id = "productList" data-role = "listview" data-inset = "true" data-filter = "true">
+   					<li data-role = "divider">Database</li>
+   					<li><a id="odee" href="#odee">Oracle Database Enterprise Edition</a>
+   					<li data-role = "divider">Fusion Middleware</li>
+   					<li><a id="owsee" href="#owsee">Oracle Weblogic Server Enterprise Edition</a>
+   				</ul>
+   			</div>
+   			<div data-role = "footer" data-theme = "a" data-position= "fixed" class = "ui-bar">
+   				<a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">List</a>
+   				<a href="#info" data-icon="gear">Info</a>
+   			</div>
+		</div>
+		
+		<!-- page 2 -->
+   		<div data-role = "page" id = "info">
+   			<div data-role = "header" data-position = "fixed" data-theme = "a">
+   				<h1>Info</h1>
+   			</div>
+   			<div data-role = "content">
+   				<ul id = "aboutList" data-role = "listview">
+   					<li data-role = "divider">&nbsp;</li>
+   					<li><a id="app" href="#app">About this app</a>
+   					<li><a id="terms" href="#terms">Terms and Conditions</a>
+   					<li><a id="contact" href="#contact">Contact</a>
+   				</ul><br/>
+   				<p>Version 1.0</p>
+   				<p>Oracle and Java are registered trademarks of Oracle and/or its affiliates. 
+   					This app and the author is not affiliated with or endorsed by Oracle Corporation.</p>
+   			</div>
+   			<div data-role = "footer" data-theme = "a" data-position= "fixed" class = "ui-bar">
+   				<a href="#home" data-icon="home">List</a>
+   				<a href="#info" data-icon="gear" class="ui-btn-active ui-state-persist">Info</a>
+   			</div>
+		</div>
+		
+		<!-- page 3 -->
+   		<div data-role = "page" id = "app">
+   			<div data-role = "header" data-position = "fixed" data-theme = "a" data-add-back-btn = "true">
+   				<h1>About this app</h1>
+   			</div>
+   			<div data-role = "content">
+   				<h4>Product List Oracle Oracle&#169;</h4>
+   				<p>This app is developed to provide a simple list of all available Oracle&#169; software products. Information available out there is abundant but difficult to grasp at first. So, instead of reading through pages of information you can use this app. This app provides a Product List with a <underline>simple</underline> explanation of what the product does. In addition: for each product is useful information added when available. We hope that you have easy access to what Oracle software has to offer!</p>
+   			</div>
+   			<div data-role = "footer" data-theme = "a" data-position= "fixed" class = "ui-bar">
+   				<a href="#home" data-icon="home">List</a>
+   				<a href="#info" data-icon="gear" class="ui-btn-active ui-state-persist">Info</a>
+   			</div>
+		</div>
+		
+		<!-- page 4 -->
+   		<div data-role = "page" id = "terms">
+   			<div data-role = "header" data-position = "fixed" data-theme = "a" data-add-back-btn = "true">
+   				<h1>Terms and Conditions</h1>
+   			</div>
+   			<div data-role = "content">
+   				<p>These Terms and Conditions of Use (the Terms of Use) apply to your use of this App (ProductList Oracle). This App is the property of the Author/Developer and its licensors. BY USING THIS APP YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE APP.</p>
+				<p>The Author/Developer reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the App following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, the Author/Developer grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use this App.</p>
+				<h4>Contents and use of this App</h4>
+				<p>The material presented within this App is based on the authors best effort, and meant for advisory purposes. Your use of this material is at your own risk. The Author/Developer denies any responsibility for any damage that could occur through errors in this material. The content may not be divulged or reproduced in whole or in part whether electronically or as hard copy to any third party.</p>
+				<h4>Limitation of Liability</h4>
+				<p>The Author/Developer can not be held liable in any way for any damage that occurs from using information from this App, nor can the Author/Developer be held liable for any licensing related issues.</p>
+   			</div>
+   			<div data-role = "footer" data-theme = "a" data-position= "fixed" class = "ui-bar">
+   				<a href="#home" data-icon="home">List</a>
+   				<a href="#info" data-icon="gear" class="ui-btn-active ui-state-persist">Info</a>
+   			</div>
+		</div>
+		
+		<!-- page 4 -->
+   		<div data-role = "page" id = "contact">
+   			<div data-role = "header" data-position = "fixed" data-theme = "a" data-add-back-btn = "true">
+   				<h1>Contact</h1>
+   			</div>
+   			<div data-role = "content">
+   				<h4>Contact us</h4>
+   				<p>For all your questions, comments and feedback: please contact us by mail app-inc@gmail.com.</p>
+   			</div>
+   			<div data-role = "footer" data-theme = "a" data-position= "fixed" class = "ui-bar">
+   				<a href="#home" data-icon="home">List</a>
+   				<a href="#info" data-icon="gear" class="ui-btn-active ui-state-persist">Info</a>
+   			</div>
+		</div>
+		
+		
+		<!-- PRODUCT PAGES -->
+   		<div data-role = "page" id = "odee">
+   			<div data-role = "header" data-position = "fixed" data-add-back-btn = "true" data-back-btn-text="List">
+   				<h1>Oracle Database Enterprise Edition</h1>
+   			</div>
+   			<div data-role = "content">
+   				<p><b>Name</b><p>
+   				Oracle Database Enterprise Edition
+   				<p><b>Description</b></p>
+   				The latest generation of the world's #1 database is available on a choice of platforms. Includes an architecture that simplifies the process of consolidating databases onto the cloud, enabling customers to manage many databases as one without changing their applications.
+   				<p><b>More info</b></p>
+				<a href="#" onclick="window.open('http://www.oracle.com/us/products/database/enterprise-edition/comparisons/index.html','_blank','location=yes','closebuttoncaption=Return');">Database Editions Comparison Chart</a><br/>
+   			</div>
+		</div>
+		<div data-role = "page" id = "owsee">
+   			<div data-role = "header" data-add-back-btn = "true" data-back-btn-text="List">
+   				<h1>Oracle Weblogic Server Enterprise Edition</h1>
+   			</div>
+   			<div data-role = "content">
+   				<p>Description</p>
+   			</div>
+		</div>
+	</body> 
+</html>
