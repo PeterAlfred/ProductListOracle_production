@@ -1,0 +1,26 @@
+/* CustomStyle PeterAlfred */
+
+
+/* 
+Aanpassingen ivm layout iphone
+*/
+
+/*breedte header titles */
+.ui-header .ui-title, .ui-footer {
+	white-space: normal;
+}
+
+/* hoogte header ivm layout iphone */
+/*.ui-header .ui-title {
+	min-height: 50px;
+}*/
+
+/* plaatsing back button header */
+.ui-header-fixed .ui-btn-left, .ui-header-fixed .ui-btn-right {
+	margin-top: 25px;
+}
+
+/* plaatsing title in header */
+.ui-header .ui-title {
+	margin-top: 25px;
+}
