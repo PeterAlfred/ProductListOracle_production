@@ -24,3 +24,8 @@ Aanpassingen ivm layout iphone
 .ui-header .ui-title {
 	margin-top: 20px;
 }
+
+/* plaatsing buttons in footer (kleinere margin-top) */
+.ui-btn {
+	margin-top: 0px;
+}
