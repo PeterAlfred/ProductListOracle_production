@@ -6,9 +6,9 @@ Aanpassingen ivm layout iphone
 */
 
 /*breedte header titles */
-.ui-header .ui-title, .ui-footer {
-	white-space: normal;
-}
+/*.ui-header .ui-title, .ui-footer {
+	white-space: pre-wrap;
+}*/
 
 /* hoogte header ivm layout iphone */
 /*.ui-header .ui-title {
